@@ -1,0 +1,24 @@
+{
+  "api": { 
+    "invokeUrl": "https://5bltcq602h.execute-api.us-west-2.amazonaws.com/prod"
+  },
+  "cognito": {
+    "REGION": "us-east-2",
+    "USER_POOL_ID": "us-east-2_mX9Ej1S1P",
+    "APP_CLIENT_ID": "30tu6u1j30jt7p97elgba604a3",
+    "oauth": {
+      "domain": "adminbrij.auth.us-east-2.amazoncognito.com",
+      "scope": [
+          "phone",
+          "email",
+          "openid",
+          "profile",
+          "aws.cognito.signin.user.admin"
+      ],
+      "redirectSignIn": "http://localhost:3000/login",
+      "redirectSignOut": "http://localhost:3000/login",
+      "responseType": "code"
+  },
+  "federationTarget": "COGNITO_USER_POOLS"
+  }
+}
