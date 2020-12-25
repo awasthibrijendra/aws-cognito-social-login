@@ -13,13 +13,12 @@ Amplify.configure({
     region: config.cognito.REGION,
     userPoolId: config.cognito.USER_POOL_ID,
     userPoolWebClientId: config.cognito.APP_CLIENT_ID,
-    identityPoolId: "us-east-2:ae33bcdf-ddae-4773-afb9-2e8b8f1538a0",
     oauth: {
-      domain: "adminbrij.auth.us-east-2.amazoncognito.com",
-      scope: ["phone", "email", "openid", "profile", "aws.cognito.signin.user.admin" ],
-      redirectSignIn: "http://localhost:3000/login",
-      redirectSignOut: "http://localhost:3000/login",
-      responseType: "code"
+      domain: config.cognito.oauth.domain,
+      scope: config.cognito.oauth.scope,
+      redirectSignIn: config.cognito.oauth.redirectSignIn,
+      redirectSignOut: config.cognito.oauth.redirectSignOut,
+      responseType: config.cognito.oauth.responseType
     }
   }
 });

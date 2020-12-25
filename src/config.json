@@ -4,16 +4,15 @@
   },
   "cognito": {
     "REGION": "us-east-2",
-    "USER_POOL_ID": "us-east-2_mX9Ej1S1P",
-    "APP_CLIENT_ID": "30tu6u1j30jt7p97elgba604a3",
+    "USER_POOL_ID": "us-east-2_byiKcn22d",
+    "APP_CLIENT_ID": "7btkhu77cbpcarvlm9b7utc0os",
     "oauth": {
-      "domain": "adminbrij.auth.us-east-2.amazoncognito.com",
+      "domain": "nexogic-patient-temp.auth.us-east-2.amazoncognito.com",
       "scope": [
           "phone",
           "email",
           "openid",
-          "profile",
-          "aws.cognito.signin.user.admin"
+          "profile"
       ],
       "redirectSignIn": "http://localhost:3000/login",
       "redirectSignOut": "http://localhost:3000/login",

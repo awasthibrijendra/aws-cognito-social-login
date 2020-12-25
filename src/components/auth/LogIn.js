@@ -66,15 +66,28 @@ class LogIn extends Component {
     console.log(user);
 
   };
+  handleGoogleLogin = async () => {
+    //
+    console.log("111");
+    const user = await Auth.federatedSignIn({provider: 'Google'});
+    console.log(user);
+
+  };
   render() {
     return (
       <section className="section auth">
         <div className="container">
           <h1>Log in</h1>
-          <div className="field">
+            <div className="field">
               <p className="control">
             <button
                onClick={this.handleFbLogin}>Login with Facebook</button>
+            </p>
+            </div>
+            <div className="field">
+              <p className="control">
+            <button
+               onClick={this.handleGoogleLogin}>Login with Google</button>
             </p>
             </div>
           <FormErrors formerrors={this.state.errors} />
